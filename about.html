@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+	<title>Adventure Travel Club</title>
+	<style type="text/css">
+/* The following commands will style the page using a simple box model; the border and property elements are only used to distinquish the edges of each section.  These are optional and can be removed if desired. */
+		h1 { color: Peru; }
+		h2 { color: DarkKhaki; }
+		#wrapper { 
+			border: thin DarkGoldenRod solid; 
+		}
+		#header {width: auto;
+			border: thin DarkGoldenRod solid;
+		}
+		body {
+			margin: 0 auto;
+			width: 700px;
+		}
+		#navigation {
+			float: left;
+			width: 150px;
+			background: Olive;
+		}
+		#content1 {
+			margin-left: 150px;
+			padding: 10px;
+		}
+		#footer {
+			border: thin DarkGoldenRod solid;
+			text-align: center;
+			clear: both;
+		}
+		input[type=text], select {
+			width: 100%
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid @ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit] {
+			width: 20%
+			background-color: #D3D3D3
+			color: black;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: thin black solind;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background: #778899;
+		}
+		form {
+			border-radius: 5px;
+			background-color: #F2F2F2;
+			padding: 20px;
+		}
+	</style>
+		
+</head>
+<body bgcolor="OliveDrab">
+<!-- Call out the "wrapper" "header" "navigation" "content1" and "footer" using the "div id" tag. These will define each new section of the page -->
+	<div id = "wrapper">
+	<div id ="header">
+		<h1><center>Adventure Travel Club</center></h1>
+		<h2><center>Exploring National Parks Across the Nation</center></h2>
+	</div>
+	<div id = "navigation">
+		<h2><strong>Navigation</strong></h2>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="trips.html">Previous Trips</a></li>
+			<li><a href="gallery.html">Photo Gallery</a></li>
+			<li><a href="forums.html">Event Forums</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+	<div id="content1">
+		<h2>What is Adventure Travel Club?</h2>
+		<p>We are a group of National Park enthusiasts that enjoy getting together and exploring the many National Parks across the nation.  We come from many different backgrounds, and have separate interests that sometimes blend together and allow us to broaden our scope.  The one thing all of us have in common is the love for the beauty of our National Parks.  Some of us enjoy bird watching, hiking, exploring, looking for wildlife, taking tours, and sometimes just relaxing with a nice view.  If you are interested in more information about the Adventure Travel Club or feel that you might be interested in becoming a member, fill out the information request below and a member of our club will contact you.</p>
+		<form action="MAILTO: contact@atc.com method="post" enctype="text/plain">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" value="First and Last Name"><br/>
+
+			<label for="email">E-mail</label>
+			<input type="text" id="email" email="email" value="E-mail Address"><br/>
+
+			<label for="age">Age</label>
+			<select id="age" name="age">
+				<option value="under30">Under 30</option>
+				<option value="30_40">30-40</option>
+				<option value="41_50">41-50</option>
+				<option value="51-60">51-60</option>
+				<option value="over60">Over 60</option>
+			</select><br/>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<div id="footer">
+		<p>This page was written by <strong><em>Chris Mayfield</em></strong>, May 2016.
+	</div>
+</body>
+</html>
